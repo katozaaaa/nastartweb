@@ -1,91 +1,775 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
-        <link rel='stylesheet' href='css/style.css'>
-        <title> NASTARTWEB - Digital agency </title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, user-scalable=0"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="styles/normalize.css" />
+        <link rel="stylesheet" href="styles/style.css" />
+        <script src="scripts/script.js" defer />
+        <title>NASTARTWEB - Digital agency</title>
     </head>
-    <main>
+    <body>
         <header class="header">
-            <div class="header__logo">
-                <p>
-                    <span> NASTART </span>
-                    <span> WEB </span>
-                </p>
-                <p>
-                    Digital Agency
-                </p>
-            </div>
-            <div class="header__nav">
-                <a href="tel:+78000000000" class="header__nav-contact">
+            <div class="container header__container">
+                <img
+                    class="header__logo"
+                    src="assets/images/logo.svg"
+                    alt="Digital Agency NASTARTWEB"
+                    width="282"
+                    height="47"
+                />
+                <a href="tel:+78000000000" class="header__contact">
                     Связаться
                 </a>
-                <div class="header__nav-menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+                <button class="header__menu-button">
+                    <svg
+                        width="10"
+                        height="11"
+                        viewBox="0 0 10 11"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <circle cx="5" cy="5.5" r="4.5" stroke="white" />
+                    </svg>
+                    <svg
+                        width="10"
+                        height="11"
+                        viewBox="0 0 10 11"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <circle cx="5" cy="5.5" r="5" fill="#FF0000" />
+                    </svg>
+                    <svg
+                        width="10"
+                        height="11"
+                        viewBox="0 0 10 11"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <circle cx="5" cy="5.5" r="4.5" stroke="white" />
+                    </svg>
+                    <svg
+                        width="10"
+                        height="11"
+                        viewBox="0 0 10 11"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <circle cx="5" cy="5.5" r="4.5" stroke="white" />
+                    </svg>
+                </button>
             </div>
         </header>
         <main class="main">
             <section class="hero">
                 <div class="container hero__container">
                     <div class="hero__head">
-                        <h1 class='hero__title'>
-                            <span> NAST </span>
-                            <span> ART </span>
-                            <span> WEB </span>
-                        </h1>
+                        <div class="hero__title">
+                            <svg
+                                width="673"
+                                height="184"
+                                viewBox="0 0 673 184"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <g clip-path="url(#clip0_1721_57)">
+                                    <path
+                                        d="M0 180.359V3.64116H34.2121L114.363 123.193C116.217 126.025 118.03 129.18 119.803 132.66C121.576 136.058 122.986 138.89 124.034 141.156H125.243C124.921 138.566 124.639 135.168 124.397 130.96C124.155 126.672 124.034 123.112 124.034 120.28V3.64116H151.718V180.359H117.506L36.1464 59.5937C34.2927 56.9235 32.6406 54.2938 31.1899 51.7045C29.8198 49.1152 28.6915 46.6878 27.8049 44.4222H26.4751C26.7975 47.0114 27.0393 49.8839 27.2005 53.0396C27.4422 56.1143 27.5631 59.0677 27.5631 61.8997V180.359H0Z"
+                                        fill="white"
+                                    />
+                                    <path
+                                        d="M172.995 180.359L243.112 2.79156H275.631L346.111 180.359H312.745L265.114 52.9182C263.744 49.358 262.495 45.9191 261.366 42.6016C260.238 39.2841 259.271 36.007 258.465 32.7704H257.135C256.329 36.0879 255.362 39.4055 254.234 42.723C253.186 45.9595 251.977 49.358 250.607 52.9182L202.371 180.359H172.995ZM204.548 138L213.252 114.575L303.678 114.697L312.503 138H204.548Z"
+                                        fill="white"
+                                    />
+                                    <path
+                                        d="M357.233 130.596V128.533H388.544V130.475C388.544 140.266 392.251 147.669 399.666 152.686C407.161 157.703 417.839 160.211 431.702 160.211C445.403 160.211 455.799 157.743 462.891 152.807C469.984 147.872 473.53 141.52 473.53 133.752C473.61 126.389 470.548 120.603 464.342 116.396C458.217 112.107 444.033 107.495 421.789 102.559C399.545 97.6236 383.829 91.2313 374.641 83.3826C365.534 75.4529 360.98 64.4485 360.98 50.3694C360.9 35.7238 366.985 23.6675 379.235 14.2005C391.485 4.73351 408.45 0 430.13 0C451.81 0 468.976 5.13808 481.63 15.4142C494.363 25.6904 500.73 38.1513 500.73 52.7968V54.7388H469.782V52.7968C469.621 44.3008 466.276 37.3826 459.748 32.0422C453.301 26.6209 443.388 23.9103 430.009 23.9103C416.711 23.9103 407 26.1354 400.874 30.5858C394.749 34.9551 391.687 40.4978 391.687 47.2137C391.687 54.496 394.709 60.1196 400.754 64.0844C406.879 68.0492 419.774 72.2164 439.439 76.5857C461.441 81.5215 477.761 88.197 488.399 96.6121C499.038 105.027 504.357 117.003 504.357 132.538C504.357 147.831 497.789 160.252 484.652 169.799C471.596 179.266 453.865 184 431.46 184C409.055 184 391.042 179.266 377.422 169.799C363.882 160.332 357.152 147.265 357.233 130.596Z"
+                                        fill="white"
+                                    />
+                                    <path
+                                        d="M518.38 27.3087V3.64116H673V27.3087H611.225V180.359H580.277V27.3087H518.38Z"
+                                        fill="white"
+                                    />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1721_57">
+                                        <rect
+                                            width="673"
+                                            height="184"
+                                            fill="white"
+                                        />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <svg
+                                width="495"
+                                height="177"
+                                viewBox="0 0 495 177"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <g clip-path="url(#clip0_1721_59)">
+                                    <path
+                                        d="M0 177L70.2643 0H102.852L173.48 177H140.044L92.3128 49.9665C90.9398 46.4176 89.688 42.9897 88.5573 39.6828C87.4266 36.3759 86.4574 33.1094 85.6498 29.8831H84.3172C83.5095 33.19 82.5404 36.4969 81.4097 39.8038C80.3598 43.0301 79.1483 46.4176 77.7753 49.9665L29.4383 177H0ZM31.6189 134.776L40.3414 111.427L130.958 111.548L139.802 134.776H31.6189Z"
+                                        fill="white"
+                                    />
+                                    <path
+                                        d="M195.408 177V0.84689H262.522C284.894 0.84689 302.137 5.68626 314.251 15.365C326.446 25.0437 332.544 38.231 332.544 54.9269C332.544 71.6227 326.446 84.931 314.251 94.8517C302.056 104.772 284.813 109.733 262.522 109.733H226.542V177H195.408ZM226.542 86.5038H262.28C276.736 86.5038 286.872 83.5195 292.687 77.5509C298.502 71.5017 301.41 64.0007 301.41 55.0478C301.41 45.853 298.381 38.3923 292.324 32.6658C286.267 26.9392 276.252 24.0759 262.28 24.0759H226.542V86.5038ZM305.044 177L259.615 96.1825L293.414 95.2146L340.419 177H305.044Z"
+                                        fill="white"
+                                    />
+                                    <path
+                                        d="M340.055 24.4388V0.84689H495V24.4388H433.095V177H402.082V24.4388H340.055Z"
+                                        fill="white"
+                                    />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1721_59">
+                                        <rect
+                                            width="495"
+                                            height="177"
+                                            fill="white"
+                                        />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <svg
+                                width="568"
+                                height="177"
+                                viewBox="0 0 568 177"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <g clip-path="url(#clip0_1721_61)">
+                                    <path
+                                        d="M46.8391 177L0 0H31.7102L63.4204 128.727C64.1466 131.47 64.7518 134.252 65.2359 137.075C65.72 139.898 66.1638 142.681 66.5672 145.423H67.8986C68.2213 142.681 68.5844 139.898 68.9879 137.075C69.3913 134.252 69.9561 131.47 70.6823 128.727L103.361 0H138.944L172.712 128.485C173.438 131.308 174.003 134.131 174.406 136.954C174.81 139.777 175.173 142.56 175.495 145.302H176.948C177.271 142.479 177.634 139.697 178.037 136.954C178.441 134.131 178.965 131.308 179.61 128.485L210.716 0H238.795L191.714 177H157.22L123.573 49.6036C122.847 46.7806 122.161 43.9173 121.515 41.0137C120.951 38.0294 120.507 35.1661 120.184 32.4238H118.732C118.328 35.1661 117.844 37.9891 117.279 40.8927C116.795 43.7157 116.15 46.5386 115.343 49.3616L81.3331 176.758L46.8391 177Z"
+                                        fill="white"
+                                    />
+                                    <path
+                                        d="M266.995 176.153V0H394.441V23.4709H298.1V73.6794H382.217V97.0294H298.1V152.803H395.772V176.153H266.995Z"
+                                        fill="white"
+                                    />
+                                    <path
+                                        d="M427.483 176.153V0H495.623C516.602 0 533.022 3.71018 544.883 11.1306C556.825 18.5509 562.796 30.2864 562.796 46.337C562.796 56.0964 560.173 64.0813 554.929 70.2919C549.765 76.5024 543.31 80.7772 535.564 83.1162V83.6001C545.085 86.0198 552.871 90.7785 558.923 97.8763C564.974 104.974 568 114.249 568 125.703C568 141.834 561.747 154.295 549.24 163.087C536.734 171.798 520.193 176.153 499.617 176.153H427.483ZM458.225 153.771H499.133C512.285 153.771 521.887 151.19 527.939 146.028C534.071 140.785 537.137 133.607 537.137 124.493C537.137 115.379 534.071 108.241 527.939 103.079C521.806 97.9166 512.245 95.3356 499.254 95.3356H458.225V153.771ZM458.225 73.6794H495.26C508.251 73.6794 517.611 71.4614 523.339 67.0253C529.068 62.5085 531.933 56.0964 531.933 47.7888C531.933 39.5619 529.068 33.2707 523.339 28.9152C517.611 24.5598 508.251 22.3821 495.26 22.3821H458.225V73.6794Z"
+                                        fill="white"
+                                    />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1721_61">
+                                        <rect
+                                            width="568"
+                                            height="177"
+                                            fill="white"
+                                        />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
                         <div class="hero__head-bottom">
-                            <h3 class="hero__subtitle">
-                                powerful test Digital Agency
-                            </h3>
-                            <div>
-                                что и как делаем
-                            </div>
-                            <div>
-                                текст рыба рыба тест текст рыба текст рыба тест и крутые кейсы
+                            <h1 class="hero__subtitle title">
+                                <span> Powerful test </span>
+                                <span> Digital Agency </span>
+                            </h1>
+                            <div class="hero__text-group">
+                                <div class="hero__text hero__text-left">
+                                    <span>что и как</span>
+                                    <span> делаем</span>
+                                </div>
+                                <div class="hero__text">
+                                    <span>текст рыба </span>
+                                    <span>рыба тест текст рыба</span>
+                                    <span> текст рыба тест </span>
+                                    <span>и крутые кейсы </span>
+                                </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="hero__bg">
+                        <video
+                            autoplay="autoplay"
+                            loop="loop"
+                            muted="muted"
+                            width="1920"
+                            height="1200"
+                            playsinline=""
+                            poster="assets/images/bg.jpg"
+                            class="hero__bg-video"
+                        >
+                            <source
+                                src="assets/video/bg.webm"
+                                type="video/webm"
+                            />
+                            <source
+                                src="assets/video/bg.mp4"
+                                type="video/mp4"
+                            />
+                        </video>
                     </div>
                 </div>
             </section>
             <section class="about">
                 <div class="container about__container">
-                    <div class="about__title">
-                        The world moves fast, we keep pace. Cut through the noise with our process.
-                    </div>
-                    <div class="about__content">
-                        <div class="about__content-left">
+                    <h2 class="about__title title">
+                        <span>The world moves</span>
+                        <span>fast, we keep pace.</span>
+                        <span>Cut through the</span>
+                        <span>noise with our</span>
+                        <span>process.</span>
+                    </h2>
+                    <div class="about__text-group">
+                        <div class="about__text-left about__text">
                             Комплексные возможности ∞ проектирования
                         </div>
-                        <div class="about__content-right">
-                            Мощный дуэт, движимый дизайном
+                        <div class="about__text-right about__text">
+                            Мощный дуэт,&nbsp;движимый дизайном
                         </div>
+                    </div>
+                    <div class="about__bg-blur">
+                        <svg
+                            width="1920"
+                            height="3494"
+                            viewBox="0 0 1920 3494"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g filter="url(#filter0_f_2_157)">
+                                <circle
+                                    cx="960"
+                                    cy="1619"
+                                    r="675"
+                                    fill="white"
+                                    fill-opacity="0.6"
+                                />
+                            </g>
+                            <defs>
+                                <filter
+                                    id="filter0_f_2_157"
+                                    x="-915"
+                                    y="-256"
+                                    width="3750"
+                                    height="3750"
+                                    filterUnits="userSpaceOnUse"
+                                    color-interpolation-filters="sRGB"
+                                >
+                                    <feFlood
+                                        flood-opacity="0"
+                                        result="BackgroundImageFix"
+                                    />
+                                    <feBlend
+                                        mode="normal"
+                                        in="SourceGraphic"
+                                        in2="BackgroundImageFix"
+                                        result="shape"
+                                    />
+                                    <feGaussianBlur
+                                        stdDeviation="600"
+                                        result="effect1_foregroundBlur_2_157"
+                                    />
+                                </filter>
+                            </defs>
+                        </svg>
                     </div>
                 </div>
             </section>
             <section class="awards">
                 <div class="container awards__container">
-                    <div class="awards__title">
-                        Наши награды
-                    </div>
+                    <h2 class="awards__title">Наши награды</h2>
+                    <ul class="awards__list">
+                        <li class="awards__item">
+                            <a href="/">
+                                <div class="awards__item-title">
+                                    NASTART.DEV
+                                </div>
+                                <div class="awards__item-img-wrapper">
+                                    <picture class="awards__item-img">
+                                        <!--                            <source-->
+                                        <!--                                srcset="-->
+                                        <!--                                    assets/images/award-256px.webp,-->
+                                        <!--                                    assets/images/award-256pxx@2x.webp 2x-->
+                                        <!--                                "-->
+                                        <!--                                media="(min-width: 768px)"-->
+                                        <!--                                width="256"-->
+                                        <!--                                height="302"-->
+                                        <!--                                type="image/webp" />-->
+                                        <source
+                                            srcset="
+                                                assets/images/award-256px.jpg,
+                                                assets/images/award-256px.jpg 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                            width="256"
+                                            height="302"
+                                            type="image/jpg" />
+                                        <!--                            <source-->
+                                        <!--                                srcset="-->
+                                        <!--                                    assets/images/award-256px.webp,-->
+                                        <!--                                    assets/images/award-256px@2x.webp 2x-->
+                                        <!--                                "-->
+                                        <!--                                media="(min-width: 361px)"-->
+                                        <!--                                type="image/webp" />-->
+                                        <!--                            <source-->
+                                        <!--                                srcset="-->
+                                        <!--                                    assets/images/award-256px.jpg,-->
+                                        <!--                                    assets/images/award-256px@2x.jpg 2x-->
+                                        <!--                                "-->
+                                        <!--                                media="(min-width: 361px)"-->
+                                        <!--                                type="image/jpg" />-->
+                                        <img
+                                            src="assets/images/award-256px.jpg"
+                                            width="256"
+                                            height="302"
+                                            alt="Award 1"
+                                    /></picture>
+                                </div>
+                                <div class="awards__item-right">
+                                    <div class="awards__item-award">
+                                        Madeontilda
+                                    </div>
+                                    <div class="awards__item-date">
+                                        08.11.2023
+                                    </div>
+                                    <div class="awards__item-arrow-wrapper">
+                                        <span> Проект </span>
+                                        <svg
+                                            width="18"
+                                            height="18"
+                                            viewBox="0 0 18 18"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <use href="#awards-item-arrow" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="awards__item">
+                            <a href="/">
+                                <div class="awards__item-title">
+                                    NASTART.DEV
+                                </div>
+                                <div class="awards__item-img-wrapper">
+                                    <picture class="awards__item-img">
+                                        <!--                            <source-->
+                                        <!--                                srcset="-->
+                                        <!--                                    assets/images/award-256px.webp,-->
+                                        <!--                                    assets/images/award-256pxx@2x.webp 2x-->
+                                        <!--                                "-->
+                                        <!--                                media="(min-width: 768px)"-->
+                                        <!--                                width="256"-->
+                                        <!--                                height="302"-->
+                                        <!--                                type="image/webp" />-->
+                                        <source
+                                            srcset="
+                                                assets/images/award-256px.jpg,
+                                                assets/images/award-256px.jpg 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                            width="256"
+                                            height="302"
+                                            type="image/jpg" />
+                                        <!--                            <source-->
+                                        <!--                                srcset="-->
+                                        <!--                                    assets/images/award-256px.webp,-->
+                                        <!--                                    assets/images/award-256px@2x.webp 2x-->
+                                        <!--                                "-->
+                                        <!--                                media="(min-width: 361px)"-->
+                                        <!--                                type="image/webp" />-->
+                                        <!--                            <source-->
+                                        <!--                                srcset="-->
+                                        <!--                                    assets/images/award-256px.jpg,-->
+                                        <!--                                    assets/images/award-256px@2x.jpg 2x-->
+                                        <!--                                "-->
+                                        <!--                                media="(min-width: 361px)"-->
+                                        <!--                                type="image/jpg" />-->
+                                        <img
+                                            src="assets/images/award-256px.jpg"
+                                            width="256"
+                                            height="302"
+                                            alt="Award 1"
+                                    /></picture>
+                                </div>
+                                <div class="awards__item-right">
+                                    <div class="awards__item-award">
+                                        awwwards // Honor Mention
+                                    </div>
+                                    <div class="awards__item-date">
+                                        08.11.2023
+                                    </div>
+                                    <div class="awards__item-arrow-wrapper">
+                                        <span> Проект </span>
+                                        <svg
+                                            width="18"
+                                            height="18"
+                                            viewBox="0 0 18 18"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <use href="#awards-item-arrow" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="awards__item">
+                            <a href="/">
+                                <div class="awards__item-title">
+                                    NASTART.DEV
+                                </div>
+                                <div class="awards__item-img-wrapper">
+                                    <picture class="awards__item-img">
+                                        <!--                            <source-->
+                                        <!--                                srcset="-->
+                                        <!--                                    assets/images/award-256px.webp,-->
+                                        <!--                                    assets/images/award-256pxx@2x.webp 2x-->
+                                        <!--                                "-->
+                                        <!--                                media="(min-width: 768px)"-->
+                                        <!--                                width="256"-->
+                                        <!--                                height="302"-->
+                                        <!--                                type="image/webp" />-->
+                                        <source
+                                            srcset="
+                                                assets/images/award-256px.jpg,
+                                                assets/images/award-256px.jpg 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                            width="256"
+                                            height="302"
+                                            type="image/jpg" />
+                                        <!--                            <source-->
+                                        <!--                                srcset="-->
+                                        <!--                                    assets/images/award-256px.webp,-->
+                                        <!--                                    assets/images/award-256px@2x.webp 2x-->
+                                        <!--                                "-->
+                                        <!--                                media="(min-width: 361px)"-->
+                                        <!--                                type="image/webp" />-->
+                                        <!--                            <source-->
+                                        <!--                                srcset="-->
+                                        <!--                                    assets/images/award-256px.jpg,-->
+                                        <!--                                    assets/images/award-256px@2x.jpg 2x-->
+                                        <!--                                "-->
+                                        <!--                                media="(min-width: 361px)"-->
+                                        <!--                                type="image/jpg" />-->
+                                        <img
+                                            src="assets/images/award-256px.jpg"
+                                            width="256"
+                                            height="302"
+                                            alt="Award 1"
+                                    /></picture>
+                                </div>
+                                <div class="awards__item-right">
+                                    <div class="awards__item-award">
+                                        dprofile // лучшее
+                                    </div>
+                                    <div class="awards__item-date">
+                                        08.11.2023
+                                    </div>
+                                    <div class="awards__item-arrow-wrapper">
+                                        <span> Проект </span>
+                                        <svg
+                                            width="18"
+                                            height="18"
+                                            viewBox="0 0 18 18"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <use href="#awards-item-arrow" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="awards__item">
+                            <a href="/">
+                                <div class="awards__item-title">
+                                    NASTART.DEV
+                                </div>
+                                <div class="awards__item-img-wrapper">
+                                    <picture class="awards__item-img">
+                                        <!--                            <source-->
+                                        <!--                                srcset="-->
+                                        <!--                                    assets/images/award-256px.webp,-->
+                                        <!--                                    assets/images/award-256pxx@2x.webp 2x-->
+                                        <!--                                "-->
+                                        <!--                                media="(min-width: 768px)"-->
+                                        <!--                                width="256"-->
+                                        <!--                                height="302"-->
+                                        <!--                                type="image/webp" />-->
+                                        <source
+                                            srcset="
+                                                assets/images/award-256px.jpg,
+                                                assets/images/award-256px.jpg 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                            width="256"
+                                            height="302"
+                                            type="image/jpg" />
+                                        <!--                            <source-->
+                                        <!--                                srcset="-->
+                                        <!--                                    assets/images/award-256px.webp,-->
+                                        <!--                                    assets/images/award-256px@2x.webp 2x-->
+                                        <!--                                "-->
+                                        <!--                                media="(min-width: 361px)"-->
+                                        <!--                                type="image/webp" />-->
+                                        <!--                            <source-->
+                                        <!--                                srcset="-->
+                                        <!--                                    assets/images/award-256px.jpg,-->
+                                        <!--                                    assets/images/award-256px@2x.jpg 2x-->
+                                        <!--                                "-->
+                                        <!--                                media="(min-width: 361px)"-->
+                                        <!--                                type="image/jpg" />-->
+                                        <img
+                                            src="assets/images/award-256px.jpg"
+                                            width="256"
+                                            height="302"
+                                            alt="Award 1"
+                                    /></picture>
+                                </div>
+                                <div class="awards__item-right">
+                                    <div class="awards__item-award">
+                                        dprofile // брендинг
+                                    </div>
+                                    <div class="awards__item-date">
+                                        08.11.2023
+                                    </div>
+                                    <div class="awards__item-arrow-wrapper">
+                                        <span> Проект </span>
+                                        <svg
+                                            width="18"
+                                            height="18"
+                                            viewBox="0 0 18 18"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <use href="#awards-item-arrow" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="awards__item">
+                            <a href="/">
+                                <div class="awards__item-title">
+                                    NASTART.DEV
+                                </div>
+                                <div class="awards__item-img-wrapper">
+                                    <picture class="awards__item-img">
+                                        <!--                            <source-->
+                                        <!--                                srcset="-->
+                                        <!--                                    assets/images/award-256px.webp,-->
+                                        <!--                                    assets/images/award-256pxx@2x.webp 2x-->
+                                        <!--                                "-->
+                                        <!--                                media="(min-width: 768px)"-->
+                                        <!--                                width="256"-->
+                                        <!--                                height="302"-->
+                                        <!--                                type="image/webp" />-->
+                                        <source
+                                            srcset="
+                                                assets/images/award-256px.jpg,
+                                                assets/images/award-256px.jpg 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                            width="256"
+                                            height="302"
+                                            type="image/jpg" />
+                                        <!--                            <source-->
+                                        <!--                                srcset="-->
+                                        <!--                                    assets/images/award-256px.webp,-->
+                                        <!--                                    assets/images/award-256px@2x.webp 2x-->
+                                        <!--                                "-->
+                                        <!--                                media="(min-width: 361px)"-->
+                                        <!--                                type="image/webp" />-->
+                                        <!--                            <source-->
+                                        <!--                                srcset="-->
+                                        <!--                                    assets/images/award-256px.jpg,-->
+                                        <!--                                    assets/images/award-256px@2x.jpg 2x-->
+                                        <!--                                "-->
+                                        <!--                                media="(min-width: 361px)"-->
+                                        <!--                                type="image/jpg" />-->
+                                        <img
+                                            src="assets/images/award-256px.jpg"
+                                            width="256"
+                                            height="302"
+                                            alt="Award 1"
+                                    /></picture>
+                                </div>
+                                <div class="awards__item-right">
+                                    <div class="awards__item-award">
+                                        dprofile // интерфейсы
+                                    </div>
+                                    <div class="awards__item-date">
+                                        08.11.2023
+                                    </div>
+                                    <div class="awards__item-arrow-wrapper">
+                                        <span> Проект </span>
+                                        <svg
+                                            width="18"
+                                            height="18"
+                                            viewBox="0 0 18 18"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <use href="#awards-item-arrow" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="awards__item">
+                            <a href="/">
+                                <div class="awards__item-title">
+                                    NASTART.DEV
+                                </div>
+                                <div class="awards__item-img-wrapper">
+                                    <picture class="awards__item-img">
+                                        <!--                            <source-->
+                                        <!--                                srcset="-->
+                                        <!--                                    assets/images/award-256px.webp,-->
+                                        <!--                                    assets/images/award-256pxx@2x.webp 2x-->
+                                        <!--                                "-->
+                                        <!--                                media="(min-width: 768px)"-->
+                                        <!--                                width="256"-->
+                                        <!--                                height="302"-->
+                                        <!--                                type="image/webp" />-->
+                                        <source
+                                            srcset="
+                                                assets/images/award-256px.jpg,
+                                                assets/images/award-256px.jpg 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                            width="256"
+                                            height="302"
+                                            type="image/jpg" />
+                                        <!--                            <source-->
+                                        <!--                                srcset="-->
+                                        <!--                                    assets/images/award-256px.webp,-->
+                                        <!--                                    assets/images/award-256px@2x.webp 2x-->
+                                        <!--                                "-->
+                                        <!--                                media="(min-width: 361px)"-->
+                                        <!--                                type="image/webp" />-->
+                                        <!--                            <source-->
+                                        <!--                                srcset="-->
+                                        <!--                                    assets/images/award-256px.jpg,-->
+                                        <!--                                    assets/images/award-256px@2x.jpg 2x-->
+                                        <!--                                "-->
+                                        <!--                                media="(min-width: 361px)"-->
+                                        <!--                                type="image/jpg" />-->
+                                        <img
+                                            src="assets/images/award-256px.jpg"
+                                            width="256"
+                                            height="302"
+                                            alt="Award 1"
+                                    /></picture>
+                                </div>
+                                <div class="awards__item-right">
+                                    <div class="awards__item-award">
+                                        CSSDA // UI Design Award
+                                    </div>
+                                    <div class="awards__item-date">
+                                        08.11.2023
+                                    </div>
+                                    <div class="awards__item-arrow-wrapper">
+                                        <span> Проект </span>
+                                        <svg
+                                            width="18"
+                                            height="18"
+                                            viewBox="0 0 18 18"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <use href="#awards-item-arrow" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <ul class="awards__list">
-                    <li class="awards__item">
-                        <span class="awards__item-title"> NASTART.DEV </span>
-                        <span class="awards__item-award"> Madeontilda </span>
-                        <span class="awards__item-date"> 08.11.2023 </span>
-                        <span class="awards__item-arrow">
-
-                        </span>
-                    </li>
-                </ul>
             </section>
-            <svg xmlns="http://www.w3.org/2000/svg" class="sprite" style="visibility: hidden; width: 0px; height: 0px;"><symbol id="glow-1"><g filter="url(#filter0_f_10207_3873)"><ellipse cx="696.106" cy="598.891" rx="232.407" ry="386.265" transform="rotate(65.223 696.106 598.891)" fill="#1E41AC"></ellipse></g><defs><filter id="filter0_f_10207_3873" x="0.0327148" y="0.924805" width="1392.15" height="1195.93" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend><feGaussianBlur stdDeviation="166" result="effect1_foregroundBlur_10207_3873"></feGaussianBlur></filter></defs></symbol><symbol id="glow-2"><g filter="url(#filter0_f_10207_3868)"><ellipse cx="810.895" cy="780.461" rx="232.407" ry="386.265" transform="rotate(65.223 810.895 780.461)" fill="#1E41AC"></ellipse><ellipse cx="654.035" cy="571.421" rx="193.471" ry="321.554" transform="rotate(65.223 654.035 571.421)" fill="#AC53C7"></ellipse></g><defs><filter id="filter0_f_10207_3868" x="-69" y="-89" width="1678" height="1592.35" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend><feGaussianBlur stdDeviation="175" result="effect1_foregroundBlur_10207_3868"></feGaussianBlur></filter></defs></symbol><symbol id="lock"><g opacity="0.5"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.57143 7.86906C2.57143 4.31792 5.44886 1.44049 9 1.44049C12.5511 1.44049 15.4286 4.31792 15.4286 7.86906V11.7262H15.9429C17.0743 11.7262 18 12.6519 18 13.7833V22.7833C18 24.4805 16.6114 25.8691 14.9143 25.8691H3.08571C1.38857 25.8691 0 24.4805 0 22.7833V13.7833C0 12.6519 0.925714 11.7262 2.05714 11.7262H2.57143V7.86906ZM12.8571 7.86906V11.7262H5.14286V7.86906C5.14286 5.73735 6.86829 4.01192 9 4.01192C11.1317 4.01192 12.8571 5.73735 12.8571 7.86906ZM9 14.6191C8.48872 14.6185 7.99251 14.7921 7.59309 15.1113C7.19366 15.4305 6.91485 15.8762 6.80258 16.375C6.69031 16.8738 6.75126 17.3959 6.9754 17.8555C7.19955 18.315 7.57352 18.6845 8.03571 18.9031V22.0119C8.03571 22.2677 8.13731 22.5129 8.31815 22.6938C8.49899 22.8746 8.74426 22.9762 9 22.9762C9.25574 22.9762 9.50101 22.8746 9.68185 22.6938C9.86269 22.5129 9.96429 22.2677 9.96429 22.0119V18.9031C10.4265 18.6845 10.8005 18.315 11.0246 17.8555C11.2487 17.3959 11.3097 16.8738 11.1974 16.375C11.0851 15.8762 10.8063 15.4305 10.4069 15.1113C10.0075 14.7921 9.51128 14.6185 9 14.6191Z" fill="#1E41AC"></path></g></symbol><symbol id="lock-big"><g clip-path="url(#clip0_10221_3515)"><path fill-rule="evenodd" clip-rule="evenodd" d="M5 15.023C5 8.11795 10.595 2.52295 17.5 2.52295C24.405 2.52295 30 8.11795 30 15.023V22.523H31C33.2 22.523 35 24.323 35 26.523V44.023C35 47.323 32.3 50.023 29 50.023H6C2.7 50.023 0 47.323 0 44.023V26.523C0 24.323 1.8 22.523 4 22.523H5V15.023ZM25 15.023V22.523H10V15.023C10 10.878 13.355 7.52295 17.5 7.52295C21.645 7.52295 25 10.878 25 15.023ZM17.5 28.148C16.5058 28.1469 15.541 28.4845 14.7643 29.1051C13.9877 29.7257 13.4456 30.5923 13.2272 31.5622C13.0089 32.5321 13.1274 33.5474 13.5633 34.441C13.9991 35.3345 14.7263 36.0529 15.625 36.478V42.523C15.625 43.0202 15.8225 43.4971 16.1742 43.8488C16.5258 44.2004 17.0027 44.398 17.5 44.398C17.9973 44.398 18.4742 44.2004 18.8258 43.8488C19.1775 43.4971 19.375 43.0202 19.375 42.523V36.478C20.2737 36.0529 21.0009 35.3345 21.4367 34.441C21.8726 33.5474 21.9911 32.5321 21.7728 31.5622C21.5544 30.5923 21.0123 29.7257 20.2357 29.1051C19.459 28.4845 18.4942 28.1469 17.5 28.148Z" fill="#4A77FF"></path></g></symbol></svg>
+            <div class="mockup-wrapper">
+                <div class="mockup">
+                    <picture class="mockup__img">
+                        <!--                            <source-->
+                        <!--                                srcset="-->
+                        <!--                                    assets/images/mockup-frame-698px.webp,-->
+                        <!--                                    assets/images/mockup-frame-698px@2x.webp 2x-->
+                        <!--                                "-->
+                        <!--                                media="(min-width: 768px)"-->
+                        <!--                                width="698"-->
+                        <!--                                height="581"-->
+                        <!--                                type="image/webp" />-->
+                        <source
+                            srcset="
+                                assets/images/mockup-frame-698px.png,
+                                assets/images/mockup-frame-698px@2x.png 2x
+                            "
+                            media="(min-width: 768px)"
+                            width="698"
+                            height="581"
+                            type="image/png" />
+                        <!--                            <source-->
+                        <!--                                srcset="-->
+                        <!--                                    assets/images/mockup-frame-m-767.webp,-->
+                        <!--                                    assets/images/mockup-frame-m-767@2x.webp 2x-->
+                        <!--                                "-->
+                        <!--                                media="(min-width: 361px)"-->
+                        <!--                                type="image/webp" />-->
+                        <!--                            <source-->
+                        <!--                                srcset="-->
+                        <!--                                    assets/images/mockup-frame-m-767.jpg,-->
+                        <!--                                    assets/images/mockup-frame-m-767@2x.jpg 2x-->
+                        <!--                                "-->
+                        <!--                                media="(min-width: 361px)"-->
+                        <!--                                type="image/jpg" />-->
+                        <img
+                            src="assets/images/mockup-frame-698px.png"
+                            width="698"
+                            height="581"
+                            alt="iMac"
+                    /></picture>
+                    <video
+                        autoplay="autoplay"
+                        loop="loop"
+                        muted="muted"
+                        playsinline=""
+                        poster="assets/images/mockup.jpg"
+                        class="mockup__video"
+                    >
+                        <source
+                            src="assets/video/mockup.webm"
+                            type="video/webm"
+                        />
+                        <source
+                            src="assets/video/mockup.mp4"
+                            type="video/mp4"
+                        />
+                    </video>
+                </div>
+            </div>
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="sprite"
+                style="visibility: hidden; width: 0px; height: 0px"
+            >
+                <symbol id="awards-item-arrow">
+                    <path
+                        d="M1.5 16.5L16.5 1.5M16.5 1.5H4.5M16.5 1.5V13.5"
+                        stroke="#333333"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                </symbol>
+            </svg>
         </main>
-    </main>
+    </body>
 </html>
