@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="ru">
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
@@ -15,7 +15,7 @@
         />
         <link rel="stylesheet" href="styles/normalize.css" />
         <link rel="stylesheet" href="styles/style.css" />
-        <script src="scripts/script.js" defer />
+        <script src="scripts/script.js" defer></script>
         <title>NASTARTWEB - Digital agency</title>
     </head>
     <body>
@@ -244,50 +244,23 @@
                             <span>дизайном</span>
                         </div>
                     </div>
-                    <div class="about__bg-blur">
-                        <svg
-                            width="1920"
-                            height="3494"
-                            viewBox="0 0 1920 3494"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                        >
-                            <g filter="url(#filter0_f_2_157)">
-                                <circle
-                                    cx="960"
-                                    cy="1619"
-                                    r="675"
-                                    fill="white"
-                                    fill-opacity="0.6"
-                                />
-                            </g>
-                            <defs>
-                                <filter
-                                    id="filter0_f_2_157"
-                                    x="-915"
-                                    y="-256"
-                                    width="3750"
-                                    height="3750"
-                                    filterUnits="userSpaceOnUse"
-                                    color-interpolation-filters="sRGB"
-                                >
-                                    <feFlood
-                                        flood-opacity="0"
-                                        result="BackgroundImageFix"
-                                    />
-                                    <feBlend
-                                        mode="normal"
-                                        in="SourceGraphic"
-                                        in2="BackgroundImageFix"
-                                        result="shape"
-                                    />
-                                    <feGaussianBlur
-                                        stdDeviation="600"
-                                        result="effect1_foregroundBlur_2_157"
-                                    />
-                                </filter>
-                            </defs>
-                        </svg>
+                    <div class="about__bg-blur-wrapper">
+                        <picture class="about__bg-blur">
+                            <source
+                                srcset="assets/images/bg-blur-3750px.webp"
+                                type="image/webp"
+                            />
+                            <source
+                                srcset="assets/images/bg-blur-3750px.png"
+                                type="image/png"
+                            />
+                            <img
+                                src="assets/images/bg-blur-3750px.png"
+                                width="256"
+                                height="302"
+                                alt="Award 1"
+                            />
+                        </picture>
                     </div>
                 </div>
             </section>
@@ -302,63 +275,48 @@
                                 </div>
                                 <div class="awards__item-img-wrapper">
                                     <picture class="awards__item-img">
-                                        <!--                            <source-->
-                                        <!--                                srcset="-->
-                                        <!--                                    assets/images/award-256px.webp,-->
-                                        <!--                                    assets/images/award-256pxx@2x.webp 2x-->
-                                        <!--                                "-->
-                                        <!--                                media="(min-width: 768px)"-->
-                                        <!--                                width="256"-->
-                                        <!--                                height="302"-->
-                                        <!--                                type="image/webp" />-->
+                                        <source
+                                            srcset="
+                                                assets/images/award-256px.webp,
+                                                assets/images/award-256px@2x.webp 2x
+                                            "
+                                            type="image/webp" />
                                         <source
                                             srcset="
                                                 assets/images/award-256px.jpg,
                                                 assets/images/award-256px.jpg 2x
                                             "
-                                            media="(min-width: 768px)"
-                                            width="256"
-                                            height="302"
                                             type="image/jpg" />
-                                        <!--                            <source-->
-                                        <!--                                srcset="-->
-                                        <!--                                    assets/images/award-256px.webp,-->
-                                        <!--                                    assets/images/award-256px@2x.webp 2x-->
-                                        <!--                                "-->
-                                        <!--                                media="(min-width: 361px)"-->
-                                        <!--                                type="image/webp" />-->
-                                        <!--                            <source-->
-                                        <!--                                srcset="-->
-                                        <!--                                    assets/images/award-256px.jpg,-->
-                                        <!--                                    assets/images/award-256px@2x.jpg 2x-->
-                                        <!--                                "-->
-                                        <!--                                media="(min-width: 361px)"-->
-                                        <!--                                type="image/jpg" />-->
                                         <img
                                             src="assets/images/award-256px.jpg"
+                                            loading="lazy"
                                             width="256"
                                             height="302"
                                             alt="Award 1"
                                     /></picture>
                                 </div>
-                                <div class="awards__item-right">
+                                <div class="awards__item-group-1">
                                     <div class="awards__item-award">
                                         Madeontilda
                                     </div>
-                                    <div class="awards__item-date">
-                                        08.11.2023
-                                    </div>
-                                    <div class="awards__item-arrow-wrapper">
-                                        <span> Проект </span>
-                                        <svg
-                                            width="18"
-                                            height="18"
-                                            viewBox="0 0 18 18"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <use href="#awards-item-arrow" />
-                                        </svg>
+                                    <div class="awards__item-group-2">
+                                        <div class="awards__item-date">
+                                            08.11.2023
+                                        </div>
+                                        <div class="awards__item-group-3">
+                                            <span> Проект </span>
+                                            <svg
+                                                width="18"
+                                                height="18"
+                                                viewBox="0 0 18 18"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <use
+                                                    href="#awards-item-arrow"
+                                                />
+                                            </svg>
+                                        </div>
                                     </div>
                                 </div>
                             </a>
@@ -370,63 +328,48 @@
                                 </div>
                                 <div class="awards__item-img-wrapper">
                                     <picture class="awards__item-img">
-                                        <!--                            <source-->
-                                        <!--                                srcset="-->
-                                        <!--                                    assets/images/award-256px.webp,-->
-                                        <!--                                    assets/images/award-256pxx@2x.webp 2x-->
-                                        <!--                                "-->
-                                        <!--                                media="(min-width: 768px)"-->
-                                        <!--                                width="256"-->
-                                        <!--                                height="302"-->
-                                        <!--                                type="image/webp" />-->
+                                        <source
+                                            srcset="
+                                                assets/images/award-256px.webp,
+                                                assets/images/award-256px@2x.webp 2x
+                                            "
+                                            type="image/webp" />
                                         <source
                                             srcset="
                                                 assets/images/award-256px.jpg,
                                                 assets/images/award-256px.jpg 2x
                                             "
-                                            media="(min-width: 768px)"
-                                            width="256"
-                                            height="302"
                                             type="image/jpg" />
-                                        <!--                            <source-->
-                                        <!--                                srcset="-->
-                                        <!--                                    assets/images/award-256px.webp,-->
-                                        <!--                                    assets/images/award-256px@2x.webp 2x-->
-                                        <!--                                "-->
-                                        <!--                                media="(min-width: 361px)"-->
-                                        <!--                                type="image/webp" />-->
-                                        <!--                            <source-->
-                                        <!--                                srcset="-->
-                                        <!--                                    assets/images/award-256px.jpg,-->
-                                        <!--                                    assets/images/award-256px@2x.jpg 2x-->
-                                        <!--                                "-->
-                                        <!--                                media="(min-width: 361px)"-->
-                                        <!--                                type="image/jpg" />-->
                                         <img
                                             src="assets/images/award-256px.jpg"
+                                            loading="lazy"
                                             width="256"
                                             height="302"
                                             alt="Award 1"
                                     /></picture>
                                 </div>
-                                <div class="awards__item-right">
+                                <div class="awards__item-group-1">
                                     <div class="awards__item-award">
                                         awwwards // Honor Mention
                                     </div>
-                                    <div class="awards__item-date">
-                                        08.11.2023
-                                    </div>
-                                    <div class="awards__item-arrow-wrapper">
-                                        <span> Проект </span>
-                                        <svg
-                                            width="18"
-                                            height="18"
-                                            viewBox="0 0 18 18"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <use href="#awards-item-arrow" />
-                                        </svg>
+                                    <div class="awards__item-group-2">
+                                        <div class="awards__item-date">
+                                            08.11.2023
+                                        </div>
+                                        <div class="awards__item-group-3">
+                                            <span> Проект </span>
+                                            <svg
+                                                width="18"
+                                                height="18"
+                                                viewBox="0 0 18 18"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <use
+                                                    href="#awards-item-arrow"
+                                                />
+                                            </svg>
+                                        </div>
                                     </div>
                                 </div>
                             </a>
@@ -438,63 +381,48 @@
                                 </div>
                                 <div class="awards__item-img-wrapper">
                                     <picture class="awards__item-img">
-                                        <!--                            <source-->
-                                        <!--                                srcset="-->
-                                        <!--                                    assets/images/award-256px.webp,-->
-                                        <!--                                    assets/images/award-256pxx@2x.webp 2x-->
-                                        <!--                                "-->
-                                        <!--                                media="(min-width: 768px)"-->
-                                        <!--                                width="256"-->
-                                        <!--                                height="302"-->
-                                        <!--                                type="image/webp" />-->
+                                        <source
+                                            srcset="
+                                                assets/images/award-256px.webp,
+                                                assets/images/award-256px@2x.webp 2x
+                                            "
+                                            type="image/webp" />
                                         <source
                                             srcset="
                                                 assets/images/award-256px.jpg,
                                                 assets/images/award-256px.jpg 2x
                                             "
-                                            media="(min-width: 768px)"
-                                            width="256"
-                                            height="302"
                                             type="image/jpg" />
-                                        <!--                            <source-->
-                                        <!--                                srcset="-->
-                                        <!--                                    assets/images/award-256px.webp,-->
-                                        <!--                                    assets/images/award-256px@2x.webp 2x-->
-                                        <!--                                "-->
-                                        <!--                                media="(min-width: 361px)"-->
-                                        <!--                                type="image/webp" />-->
-                                        <!--                            <source-->
-                                        <!--                                srcset="-->
-                                        <!--                                    assets/images/award-256px.jpg,-->
-                                        <!--                                    assets/images/award-256px@2x.jpg 2x-->
-                                        <!--                                "-->
-                                        <!--                                media="(min-width: 361px)"-->
-                                        <!--                                type="image/jpg" />-->
                                         <img
                                             src="assets/images/award-256px.jpg"
+                                            loading="lazy"
                                             width="256"
                                             height="302"
                                             alt="Award 1"
                                     /></picture>
                                 </div>
-                                <div class="awards__item-right">
+                                <div class="awards__item-group-1">
                                     <div class="awards__item-award">
                                         dprofile // лучшее
                                     </div>
-                                    <div class="awards__item-date">
-                                        08.11.2023
-                                    </div>
-                                    <div class="awards__item-arrow-wrapper">
-                                        <span> Проект </span>
-                                        <svg
-                                            width="18"
-                                            height="18"
-                                            viewBox="0 0 18 18"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <use href="#awards-item-arrow" />
-                                        </svg>
+                                    <div class="awards__item-group-2">
+                                        <div class="awards__item-date">
+                                            08.11.2023
+                                        </div>
+                                        <div class="awards__item-group-3">
+                                            <span> Проект </span>
+                                            <svg
+                                                width="18"
+                                                height="18"
+                                                viewBox="0 0 18 18"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <use
+                                                    href="#awards-item-arrow"
+                                                />
+                                            </svg>
+                                        </div>
                                     </div>
                                 </div>
                             </a>
@@ -506,63 +434,48 @@
                                 </div>
                                 <div class="awards__item-img-wrapper">
                                     <picture class="awards__item-img">
-                                        <!--                            <source-->
-                                        <!--                                srcset="-->
-                                        <!--                                    assets/images/award-256px.webp,-->
-                                        <!--                                    assets/images/award-256pxx@2x.webp 2x-->
-                                        <!--                                "-->
-                                        <!--                                media="(min-width: 768px)"-->
-                                        <!--                                width="256"-->
-                                        <!--                                height="302"-->
-                                        <!--                                type="image/webp" />-->
+                                        <source
+                                            srcset="
+                                                assets/images/award-256px.webp,
+                                                assets/images/award-256px@2x.webp 2x
+                                            "
+                                            type="image/webp" />
                                         <source
                                             srcset="
                                                 assets/images/award-256px.jpg,
                                                 assets/images/award-256px.jpg 2x
                                             "
-                                            media="(min-width: 768px)"
-                                            width="256"
-                                            height="302"
                                             type="image/jpg" />
-                                        <!--                            <source-->
-                                        <!--                                srcset="-->
-                                        <!--                                    assets/images/award-256px.webp,-->
-                                        <!--                                    assets/images/award-256px@2x.webp 2x-->
-                                        <!--                                "-->
-                                        <!--                                media="(min-width: 361px)"-->
-                                        <!--                                type="image/webp" />-->
-                                        <!--                            <source-->
-                                        <!--                                srcset="-->
-                                        <!--                                    assets/images/award-256px.jpg,-->
-                                        <!--                                    assets/images/award-256px@2x.jpg 2x-->
-                                        <!--                                "-->
-                                        <!--                                media="(min-width: 361px)"-->
-                                        <!--                                type="image/jpg" />-->
                                         <img
                                             src="assets/images/award-256px.jpg"
+                                            loading="lazy"
                                             width="256"
                                             height="302"
                                             alt="Award 1"
                                     /></picture>
                                 </div>
-                                <div class="awards__item-right">
+                                <div class="awards__item-group-1">
                                     <div class="awards__item-award">
                                         dprofile // брендинг
                                     </div>
-                                    <div class="awards__item-date">
-                                        08.11.2023
-                                    </div>
-                                    <div class="awards__item-arrow-wrapper">
-                                        <span> Проект </span>
-                                        <svg
-                                            width="18"
-                                            height="18"
-                                            viewBox="0 0 18 18"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <use href="#awards-item-arrow" />
-                                        </svg>
+                                    <div class="awards__item-group-2">
+                                        <div class="awards__item-date">
+                                            08.11.2023
+                                        </div>
+                                        <div class="awards__item-group-3">
+                                            <span> Проект </span>
+                                            <svg
+                                                width="18"
+                                                height="18"
+                                                viewBox="0 0 18 18"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <use
+                                                    href="#awards-item-arrow"
+                                                />
+                                            </svg>
+                                        </div>
                                     </div>
                                 </div>
                             </a>
@@ -574,63 +487,48 @@
                                 </div>
                                 <div class="awards__item-img-wrapper">
                                     <picture class="awards__item-img">
-                                        <!--                            <source-->
-                                        <!--                                srcset="-->
-                                        <!--                                    assets/images/award-256px.webp,-->
-                                        <!--                                    assets/images/award-256pxx@2x.webp 2x-->
-                                        <!--                                "-->
-                                        <!--                                media="(min-width: 768px)"-->
-                                        <!--                                width="256"-->
-                                        <!--                                height="302"-->
-                                        <!--                                type="image/webp" />-->
+                                        <source
+                                            srcset="
+                                                assets/images/award-256px.webp,
+                                                assets/images/award-256px@2x.webp 2x
+                                            "
+                                            type="image/webp" />
                                         <source
                                             srcset="
                                                 assets/images/award-256px.jpg,
                                                 assets/images/award-256px.jpg 2x
                                             "
-                                            media="(min-width: 768px)"
-                                            width="256"
-                                            height="302"
                                             type="image/jpg" />
-                                        <!--                            <source-->
-                                        <!--                                srcset="-->
-                                        <!--                                    assets/images/award-256px.webp,-->
-                                        <!--                                    assets/images/award-256px@2x.webp 2x-->
-                                        <!--                                "-->
-                                        <!--                                media="(min-width: 361px)"-->
-                                        <!--                                type="image/webp" />-->
-                                        <!--                            <source-->
-                                        <!--                                srcset="-->
-                                        <!--                                    assets/images/award-256px.jpg,-->
-                                        <!--                                    assets/images/award-256px@2x.jpg 2x-->
-                                        <!--                                "-->
-                                        <!--                                media="(min-width: 361px)"-->
-                                        <!--                                type="image/jpg" />-->
                                         <img
                                             src="assets/images/award-256px.jpg"
+                                            loading="lazy"
                                             width="256"
                                             height="302"
                                             alt="Award 1"
                                     /></picture>
                                 </div>
-                                <div class="awards__item-right">
+                                <div class="awards__item-group-1">
                                     <div class="awards__item-award">
                                         dprofile // интерфейсы
                                     </div>
-                                    <div class="awards__item-date">
-                                        08.11.2023
-                                    </div>
-                                    <div class="awards__item-arrow-wrapper">
-                                        <span> Проект </span>
-                                        <svg
-                                            width="18"
-                                            height="18"
-                                            viewBox="0 0 18 18"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <use href="#awards-item-arrow" />
-                                        </svg>
+                                    <div class="awards__item-group-2">
+                                        <div class="awards__item-date">
+                                            08.11.2023
+                                        </div>
+                                        <div class="awards__item-group-3">
+                                            <span> Проект </span>
+                                            <svg
+                                                width="18"
+                                                height="18"
+                                                viewBox="0 0 18 18"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <use
+                                                    href="#awards-item-arrow"
+                                                />
+                                            </svg>
+                                        </div>
                                     </div>
                                 </div>
                             </a>
@@ -642,63 +540,48 @@
                                 </div>
                                 <div class="awards__item-img-wrapper">
                                     <picture class="awards__item-img">
-                                        <!--                            <source-->
-                                        <!--                                srcset="-->
-                                        <!--                                    assets/images/award-256px.webp,-->
-                                        <!--                                    assets/images/award-256pxx@2x.webp 2x-->
-                                        <!--                                "-->
-                                        <!--                                media="(min-width: 768px)"-->
-                                        <!--                                width="256"-->
-                                        <!--                                height="302"-->
-                                        <!--                                type="image/webp" />-->
+                                        <source
+                                            srcset="
+                                                assets/images/award-256px.webp,
+                                                assets/images/award-256px@2x.webp 2x
+                                            "
+                                            type="image/webp" />
                                         <source
                                             srcset="
                                                 assets/images/award-256px.jpg,
                                                 assets/images/award-256px.jpg 2x
                                             "
-                                            media="(min-width: 768px)"
-                                            width="256"
-                                            height="302"
                                             type="image/jpg" />
-                                        <!--                            <source-->
-                                        <!--                                srcset="-->
-                                        <!--                                    assets/images/award-256px.webp,-->
-                                        <!--                                    assets/images/award-256px@2x.webp 2x-->
-                                        <!--                                "-->
-                                        <!--                                media="(min-width: 361px)"-->
-                                        <!--                                type="image/webp" />-->
-                                        <!--                            <source-->
-                                        <!--                                srcset="-->
-                                        <!--                                    assets/images/award-256px.jpg,-->
-                                        <!--                                    assets/images/award-256px@2x.jpg 2x-->
-                                        <!--                                "-->
-                                        <!--                                media="(min-width: 361px)"-->
-                                        <!--                                type="image/jpg" />-->
                                         <img
                                             src="assets/images/award-256px.jpg"
+                                            loading="lazy"
                                             width="256"
                                             height="302"
                                             alt="Award 1"
                                     /></picture>
                                 </div>
-                                <div class="awards__item-right">
+                                <div class="awards__item-group-1">
                                     <div class="awards__item-award">
                                         CSSDA // UI Design Award
                                     </div>
-                                    <div class="awards__item-date">
-                                        08.11.2023
-                                    </div>
-                                    <div class="awards__item-arrow-wrapper">
-                                        <span> Проект </span>
-                                        <svg
-                                            width="18"
-                                            height="18"
-                                            viewBox="0 0 18 18"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <use href="#awards-item-arrow" />
-                                        </svg>
+                                    <div class="awards__item-group-2">
+                                        <div class="awards__item-date">
+                                            08.11.2023
+                                        </div>
+                                        <div class="awards__item-group-3">
+                                            <span> Проект </span>
+                                            <svg
+                                                width="18"
+                                                height="18"
+                                                viewBox="0 0 18 18"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <use
+                                                    href="#awards-item-arrow"
+                                                />
+                                            </svg>
+                                        </div>
                                     </div>
                                 </div>
                             </a>
@@ -708,64 +591,38 @@
             </section>
             <div class="mockup-wrapper">
                 <div class="mockup">
-                    <picture class="mockup__img">
-                        <!--                            <source-->
-                        <!--                                srcset="-->
-                        <!--                                    assets/images/mockup-frame-698px.webp,-->
-                        <!--                                    assets/images/mockup-frame-698px@2x.webp 2x-->
-                        <!--                                "-->
-                        <!--                                media="(min-width: 768px)"-->
-                        <!--                                width="698"-->
-                        <!--                                height="581"-->
-                        <!--                                type="image/webp" />-->
+                    <picture class="mockup__frame-img">
+                        <source
+                            srcset="
+                                assets/images/mockup-frame-698px.webp,
+                                assets/images/mockup-frame-698px@2x.webp 2x
+                            "
+                            type="image/webp" />
                         <source
                             srcset="
                                 assets/images/mockup-frame-698px.png,
                                 assets/images/mockup-frame-698px@2x.png 2x
                             "
-                            media="(min-width: 768px)"
-                            width="698"
-                            height="581"
                             type="image/png" />
-                        <!--                            <source-->
-                        <!--                                srcset="-->
-                        <!--                                    assets/images/mockup-frame-m-767.webp,-->
-                        <!--                                    assets/images/mockup-frame-m-767@2x.webp 2x-->
-                        <!--                                "-->
-                        <!--                                media="(min-width: 361px)"-->
-                        <!--                                type="image/webp" />-->
-                        <!--                            <source-->
-                        <!--                                srcset="-->
-                        <!--                                    assets/images/mockup-frame-m-767.jpg,-->
-                        <!--                                    assets/images/mockup-frame-m-767@2x.jpg 2x-->
-                        <!--                                "-->
-                        <!--                                media="(min-width: 361px)"-->
-                        <!--                                type="image/jpg" />-->
                         <img
                             src="assets/images/mockup-frame-698px.png"
                             width="698"
                             height="581"
                             alt="iMac"
                     /></picture>
-                    <video
-                        autoplay="autoplay"
-                        loop="loop"
-                        muted="muted"
-                        width="682"
-                        height="386"
-                        playsinline=""
-                        poster="assets/images/mockup.jpg"
-                        class="mockup__video"
-                    >
+                    <picture class="mockup__video">
                         <source
-                            src="assets/videos/mockup.webm"
-                            type="video/webm"
-                        />
+                            srcset="assets/images/mockup.webp"
+                            type="image/webp" />
                         <source
-                            src="assets/videos/mockup.mp4"
-                            type="video/mp4"
-                        />
-                    </video>
+                            srcset="assets/images/mockup.gif"
+                            type="image/gif" />
+                        <img
+                            src="assets/images/mockup.gif"
+                            width="682"
+                            height="386"
+                            alt="iMac"
+                    /></picture>
                 </div>
             </div>
             <svg
