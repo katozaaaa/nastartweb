@@ -1,0 +1,164 @@
+.hero__container {
+    padding-block: calc(179 / var(--base-font-size) * 1rem)
+        calc(235 / var(--base-font-size) * 1rem);
+    min-height: calc(100vh - 87px);
+
+    @media (max-width: 767px) {
+        padding-block: calc(70 / var(--base-font-size) * 1rem)
+            calc(267 / var(--base-font-size) * 1rem);
+    }
+}
+
+.hero__head {
+    display: flex;
+    flex-direction: column;
+    gap: calc(40 / var(--base-font-size) * 1rem);
+
+    @media (max-width: 767px) {
+        gap: calc(102 / var(--base-font-size) * 1rem);
+    }
+}
+
+.hero__title {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+
+    & svg {
+        height: auto;
+
+        &:nth-child(1) {
+            width: calc(673 / var(--base-font-size) * 1rem);
+
+            @media (max-width: 767px) {
+                width: calc(123 / var(--base-font-size) * 1rem);
+            }
+        }
+
+        &:nth-child(2) {
+            width: calc(495 / var(--base-font-size) * 1rem);
+            margin-top: calc(4 / var(--base-font-size) * 1rem);
+            margin-left: calc(-10 / var(--base-font-size) * 1rem);
+
+            @media (max-width: 767px) {
+                width: calc(91 / var(--base-font-size) * 1rem);
+                margin: 0;
+            }
+        }
+
+        &:nth-child(3) {
+            width: calc(568 / var(--base-font-size) * 1rem);
+            margin-top: calc(4 / var(--base-font-size) * 1rem);
+            margin-left: calc(12 / var(--base-font-size) * 1rem);
+
+            @media (max-width: 767px) {
+                width: calc(104 / var(--base-font-size) * 1rem);
+                margin-top: 0;
+                margin-left: calc(3 / var(--base-font-size) * 1rem);
+            }
+        }
+    }
+}
+
+.hero__head-bottom {
+    display: flex;
+    flex-direction: row;
+    gap: calc(72 / var(--base-font-size) * 1rem);
+
+    @media (max-width: 767px) {
+        flex-direction: column;
+        gap: calc(47 / var(--base-font-size) * 1rem);
+    }
+}
+
+.hero__subtitle {
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    font-size: calc(40 / var(--base-font-size) * 1rem);
+    font-weight: 500;
+    line-height: 100%;
+    text-transform: uppercase;
+    transform: scaleX(1.21);
+    transform-origin: left center;
+
+    @media (max-width: 767px) {
+        font-size: calc(32 / var(--base-font-size) * 1rem);
+        transform: scaleX(1.17);
+    }
+}
+
+.hero__text-group {
+    display: flex;
+    flex-direction: row;
+    gap: inherit;
+
+    @media (max-width: 767px) {
+        gap: calc(20 / var(--base-font-size) * 1rem);
+        justify-content: space-between;
+    }
+}
+
+.hero__text {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--secondary-font-family);
+    font-size: calc(28 / var(--base-font-size) * 1rem);
+    font-weight: 400;
+    line-height: 130%;
+    text-transform: uppercase;
+    transform: scaleX(1.18);
+    transform-origin: right center;
+
+    @media (max-width: 767px) {
+        font-size: calc(20 / var(--base-font-size) * 1rem);
+        transform: scaleX(1.11);
+    }
+}
+
+.hero__text-left {
+    margin-right: calc(50 / var(--base-font-size) * 1rem);
+
+    @media (max-width: 767px) {
+        flex-shrink: 0;
+        transform-origin: left center;
+        margin-right: 0;
+    }
+}
+
+.hero__text-right {
+    @media (max-width: 767px) {
+        flex: 0 1 calc(200 / var(--base-font-size) * 1rem);
+        text-align: right;
+    }
+}
+
+.hero__bg {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: max(calc(1080 / 1920 * 100vw), 100lvh);
+    width: 100%;
+    overflow: hidden;
+
+    @media (max-width: 767px) {
+        min-height: unset;
+        height: max(calc(768 / var(--base-font-size) * 1rem), 100lvh);
+    }
+}
+
+.hero__bg-video {
+    position: relative;
+    height: max(calc(1200 / 1080 * 100%), calc(1200 / 1920 * 100vw));
+    width: auto;
+
+    @media (max-width: 767px) {
+        margin-top: 0;
+        height: 100%;
+    }
+}
