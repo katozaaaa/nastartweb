@@ -1,3 +1,12 @@
+.header {
+    transform: translateY(
+        calc(
+            -47 / var(--base-font-size) * 1rem + -40 / var(--base-font-size) *
+                1rem
+        )
+    );
+}
+
 .header__container {
     display: flex;
     flex-direction: row;

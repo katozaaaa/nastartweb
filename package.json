@@ -5,9 +5,10 @@
     "main": "index.js",
     "scripts": {
         "dev": "node ./scripts/server.js",
+        "lint": "npx eslint .",
+        "lint:fix": "npx eslint . --fix",
         "pretty": "npx prettier . --check",
-        "pretty:fix": "npx prettier . --write",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "pretty:fix": "npx prettier . --write"
     },
     "author": "",
     "license": "ISC",
