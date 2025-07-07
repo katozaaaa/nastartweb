@@ -63,3 +63,30 @@ section {
         padding-inline: calc(20 / var(--base-font-size) * 1rem);
     }
 }
+
+.cursor {
+    display: none;
+
+    @media (hover: hover) {
+        z-index: 1000;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: block;
+        mix-blend-mode: difference;
+        transition: transform 50ms ease-out;
+        pointer-events: none;
+    }
+}
+
+.cursor__scalable {
+    width: calc(50 / var(--base-font-size) * 1rem);
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: #ffffff;
+    transition: transform 300ms cubic-bezier(0.4, -0.6, 0.6, 1.6);
+}
+
+.cursor--hover .cursor__scalable {
+    transform: scale(1.5);
+}

@@ -66,13 +66,15 @@
         }
 
         &:hover {
-            & .awards__item-img {
-                opacity: 1;
-            }
-
-            & .awards__item-group-3 {
-                & span {
+            @media (hover: hover) {
+                & .awards__item-img {
                     opacity: 1;
+                }
+
+                & .awards__item-group-3 {
+                    & span {
+                        opacity: 1;
+                    }
                 }
             }
         }

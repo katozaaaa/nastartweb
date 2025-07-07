@@ -116,6 +116,8 @@ document.addEventListener('DOMContentLoaded', function () {
         ],
         method: 'serially'
     });
+
+    new Cursor(document.querySelector('.cursor'));
 });
 
 class Animation {
@@ -222,9 +224,45 @@ class Animation {
         const emptyProperties = Object.assign({}, properties);
 
         for (const key in emptyProperties) {
-            properties[key] = '';
+            emptyProperties[key] = '';
         }
 
         this._setProperties(element, emptyProperties);
+    }
+}
+
+class Cursor {
+    constructor(element) {
+        this._cursor = element;
+        window.addEventListener(
+            'mousemove',
+            this._setCursorPosition.bind(this)
+        );
+
+        Array.from(document.querySelectorAll('a, button')).forEach(
+            (element) => {
+                element.addEventListener(
+                    'mouseenter',
+                    this._toggleHoverClass.bind(this)
+                );
+                element.addEventListener(
+                    'mouseleave',
+                    this._toggleHoverClass.bind(this)
+                );
+            }
+        );
+    }
+
+    _setCursorPosition(e) {
+        const position = {
+            x: e.clientX - this._cursor.offsetWidth / 2,
+            y: e.clientY - this._cursor.offsetHeight / 2
+        };
+
+        this._cursor.style.transform = `translate(${position.x}px, ${position.y}px)`;
+    }
+
+    _toggleHoverClass() {
+        this._cursor.classList.toggle('cursor--hover');
     }
 }
