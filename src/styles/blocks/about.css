@@ -126,7 +126,7 @@
 }
 
 .about__bg-blur {
-    opacity: 0;
+    opacity: 0.05;
     min-width: calc(3000 / var(--base-font-size) * 1rem);
     aspect-ratio: 1;
     background-image: radial-gradient(circle at center, #FFFFFF, transparent 70%);
