@@ -60,7 +60,7 @@ const paths = {
         watch: './src/index.html'
     },
     css: {
-        src: './src/styles/**/*.css',
+        src: './src/styles/style.css',
         dest: './dist/styles',
         watch: './src/styles/**/*.css'
     },
