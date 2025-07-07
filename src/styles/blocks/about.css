@@ -126,14 +126,12 @@
 }
 
 .about__bg-blur {
-    opacity: 0;
+    opacity: 0.3;
+    min-width: calc(3000 / var(--base-font-size) * 1rem);
+    aspect-ratio: 1;
+    background-image: radial-gradient(circle at center, #FFFFFF, transparent 70%);
 
-    & img {
-        width: calc(3750 / var(--base-font-size) * 1rem);
-        height: auto;
-
-        @media (max-width: 767px) {
-            width: calc(1875 / var(--base-font-size) * 1rem);
-        }
+    @media (max-width: 767px) {
+        min-width: calc(1500 / var(--base-font-size) * 1rem);
     }
 }

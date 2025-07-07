@@ -201,7 +201,7 @@
                             height="1200"
                             playsinline
                             poster="assets/images/bg.jpg"
-                            preload="auto"
+                            preload="none"
                             class="hero__bg-video"
                         >
                             <source
@@ -245,23 +245,7 @@
                         </div>
                     </div>
                     <div class="about__bg-blur-wrapper">
-                        <picture class="about__bg-blur">
-                            <source
-                                srcset="assets/images/bg-blur-3750px.webp"
-                                type="image/webp"
-                            />
-                            <source
-                                srcset="assets/images/bg-blur-3750px.png"
-                                type="image/png"
-                            />
-                            <img
-                                src="assets/images/bg-blur-3750px.png"
-                                width="3750"
-                                height="3750"
-                                fetchpriority="high"
-                                alt="Award 1"
-                            />
-                        </picture>
+                        <div class="about__bg-blur"></div>
                     </div>
                 </div>
             </section>

@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     {
                         element: document.querySelector('.about__bg-blur'),
                         properties: {
-                            opacity: 0.15,
+                            opacity: 0.05,
                             transitionProperty: 'opacity',
                             transitionTimingFunction: 'ease-out',
                             transitionDuration: '250ms'
@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     {
                         element: document.querySelector('.about__bg-blur'),
                         properties: {
-                            opacity: 1,
+                            opacity: 0.3,
                             transitionProperty: 'opacity',
                             transitionTimingFunction: 'ease-out',
                             transitionDuration: '500ms'
@@ -259,10 +259,14 @@ class Cursor {
             y: e.clientY - this._cursor.offsetHeight / 2
         };
 
-        this._cursor.style.transform = `translate(${position.x}px, ${position.y}px)`;
+        setTimeout(() => {
+            this._cursor.style.transform = `translate(${position.x}px, ${position.y}px)`;
+        })
     }
 
     _toggleHoverClass() {
-        this._cursor.classList.toggle('cursor--hover');
+        setTimeout(() => {
+            this._cursor.classList.toggle('cursor--hover');
+        })
     }
 }
