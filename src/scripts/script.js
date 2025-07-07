@@ -20,6 +20,15 @@ document.addEventListener('DOMContentLoaded', function () {
                         method: 'parallel'
                     },
                     {
+                        element: document.querySelector('.about__bg-blur'),
+                        properties: {
+                            opacity: 0.05,
+                            transitionProperty: 'opacity',
+                            transitionTimingFunction: 'ease-out',
+                            transitionDuration: '250ms'
+                        }
+                    },
+                    {
                         animations: [
                             {
                                 element: document.querySelector(
