@@ -13,7 +13,7 @@ export default defineConfig([
         languageOptions: { globals: globals.browser }
     },
     {
-        files: [ 'scripts/**/*.{js,mjs,cjs}' ],
+        files: [ 'scripts/**/*.{js,mjs,cjs}', './gulpfile.js' ],
         languageOptions: { globals: globals.node }
     },
     {
